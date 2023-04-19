@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA SIMETRO WEB</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Prompt:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body> 
+    <!--        HEADER    -->
+    <header id="inicio" class="header">
+        <div class="container mx-auto header__container">
+            <nav class="header__grid  ">
+                <img class="header__imagen animate__animated animate__fadeInDown  animate__slow" src="img/logo-2.png" alt="imagen logo">
+                <div class="header__navegador animate__animated animate__flipInX animate__delay-1s  animate__slow"> 
+                    <a href="index.html" class="header__enlace">Inicio</a>
+                    <a href="#nosotros" class="header__enlace">Quienes somos</a>
+                    <a href="#testimonial" class="header__enlace">Testimoniales</a>
+                    <a href="#planes" class="header__enlace">Planes</a>
+                    <a href="#contacto" class="header__enlace">Contacto</a>
+                </div>
+            </nav>
+
+            <div class="header__texto animate__animated animate__zoomIn animate__delay-2s w-3/4 md:w-2/4 md:ml-10 md:mt-52">
+                <p class="text-left md:text-center text-4xl">Somos una agencia dedicada al desarrollo web profesional</p>
+                <span class="text-left text-xl">Ideal para expandir tu marca! Full responsive y adaptables en cualquier dispositivo</span>
+                <span class="text-left text-xl">Diseños modernos, elegantes y fácil de navegar</span>
+            </div>
+        </div>
+
+    </header>
+
+    <!--     NOSOTROS   -->
+    <section class="container mx-auto wave">
+        <div id="nosotros" class="nosotros">
+            <h1 class="nosotros__heading font-bold text-7xl text-center tracking-wide mt-5 mb-5">Quienes somos</h1>
+                <div class="nosotros__contenedor mt-10  flex flex-col gap-20">
+                    <div class="nosotros__card flex justify-center items-center gap-10 ">
+                        <img class="nosotros__imagen duration-300 hover:-translate-x-8 hover:scale-125" src="img/icono-cable.png" alt="imagen-tech">
+                        <p class="nosotros__texto pl-10 text-2xl max-w-sm tracking-widest md:text-4xl md:max-w-4xl ">Desarrollamos sitios web a medida y gusto del cliente. Teniendo así, la oportunidad de desarrollar por completo la idea que nos propongas </p>
+                    </div> <!--    .nosotros__card  -->
+
+                    <div class="nosotros__card flex justify-center items-center flex-row-reverse gap-10">
+                        <img class="nosotros__imagen duration-300 hover:translate-x-8 hover:scale-125" src="img/icono-connected.png" alt="imagen-tech">
+                        <p class="nosotros__texto text-2xl max-w-sm tracking-widest md:text-4xl md:max-w-4xl ">Permite que personas de todo el mundo encuentren tu negocio o proyecto las 24 horas del día, los 7 días de la semana. Con la capacidad de captar clientes potenciales de todo el mundo y ampliar tu base de clientes </p>
+                    </div> <!--    .nosotros__card  -->
+
+                    <div class="nosotros__card flex justify-center items-center gap-10">
+                        <img class="nosotros__imagen duration-300 hover:-translate-x-8 hover:scale-125" src="img/icono-competitive.png" alt="imagen-tech">
+                        <p class="nosotros__texto pl-10 text-2xl max-w-sm tracking-widest md:text-4xl md:max-w-4xl ">Una página web bien diseñada y optimizada te permite competir con otras empresas en línea abriendo nuevas oportunidades en tu negocio</p>
+                    </div> <!--    .nosotros__card  -->
+
+                    <div class="nosotros__card flex justify-center items-center flex-row-reverse gap-10">
+                        <img class="nosotros__imagen duration-300 hover:translate-x-8 hover:scale-125" src="img/icono-handshake.png" alt="imagen-tech">
+                        <p class="nosotros__texto text-2xl max-w-sm tracking-widest md:text-4xl md:max-w-4xl ">Proporciona fácilmente tu información detallada de tu negocio o emprendimiento. Los clientes pueden encontrar todo lo que necesitan saber en un solo lugar</p>
+                    </div> <!--    .nosotros__card  -->
+                </div>
+        </div>
+    </section>
+  
+
+
+   <!--     PRUEBA TESTOMONIALES    -->
+    
+    <section class="testimonial pb-10 dark:bg-gray-800 dark:text-gray-100" id="testimonial">
+        <div class="container flex-col items-center mx-auto  md:p-10 md:px-12">
+            <h1 class="p-4 text-7xl font-semibold leading-none text-center">Que dicen los clientes sobre nosotros</h1>
+        </div>
+        <div class="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap  lg:px-10 lg:gap-10 ">
+            <div class="flex flex-col max-w-sm mx-4 my-6 shadow-lg duration-300 hover:scale-110 hover:-translate-y-6 cursor-pointer lg:max-w-xl">
+                <div class="px-4 py-12 rounded-t-3xl  sm:px-8 md:px-12 dark:bg-gray-900">
+                    <p class="relative px-6 py-1 text-xl  text-center dark:text-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="w-14 h-14 dark:text-lime-400 mb-5">
+                            <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                            <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+                        </svg> Symmetry nos ayudó a llevar nuestro negocio al siguiente nivel. Con su diseño web moderno y elegante, hemos atraído a más clientes y nuestra presencia en línea ha mejorado significativamente</p>
+                </div>
+                <div class="flex flex-col items-center justify-center p-8 rounded-b-3xl dark:bg-teal-400 dark:text-gray-900">
+                    <p class="text-4xl font-semibold leading-tight">Distinctio Animi</p>
+                    <p class="text-sm uppercase">Aliquam illum</p> 
+                </div>
+            </div>
+            <div class="flex flex-col max-w-sm mx-4 my-6 shadow-lg duration-300 hover:scale-110 hover:-translate-y-6 cursor-pointer lg:max-w-xl ">
+                <div class="px-4 py-12 rounded-t-3xl  sm:px-8 md:px-12 dark:bg-gray-900">
+                    <p class="relative px-6 py-1 text-xl  text-center dark:text-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="w-14 h-14 dark:text-lime-400 mb-5">
+                            <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                            <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+                        </svg>Los chicos de Symmetry fueron claves en la creación de nuestra identidad de marca. Su equipo de diseño trabajó estrechamente con nosotros no solo para comprender nuestras necesidades, sino también haciendolo visualmente atractivo y coherente con nuestra marca. Estamos agradecidos por su dedicación y atención.</p>
+                </div>
+                <div class="flex flex-col items-center justify-center p-8 rounded-b-3xl dark:bg-teal-400 dark:text-gray-900">
+                    <p class="text-4xl font-semibold leading-tight">Distinctio Animi</p>
+                    <p class="text-sm uppercase">Aliquam illum</p>
+                </div>
+            </div>
+            <div class="flex flex-col max-w-sm mx-4 my-6 shadow-lg duration-300 hover:scale-110 hover:-translate-y-6 cursor-pointer lg:max-w-xl">
+                <div class="px-4 py-12 rounded-t-3xl  sm:px-8 md:px-12 dark:bg-gray-900">
+                    <p class="relative px-6 py-1 text-xl text-center dark:text-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="w-14 h-14 dark:text-lime-400 mb-5">
+                            <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                            <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+                        </svg>Gracias a Symmetry, tenemos una presencia en línea fuerte y profesional que ha sido fundamental para nuestro crecimiento. Nos dio el impulso que necesitábamos para llevar nuestro negocio al siguiente nivel.
+                    </p>
+                </div>
+                <div class="flex flex-col items-center justify-center p-8 rounded-b-3xl dark:bg-teal-400 dark:text-gray-900">
+                    <p class="text-4xl font-semibold leading-tight">Distinctio Animi</p>
+                    <p class="text-sm uppercase">Aliquam illum</p>
+                </div>
+            </div>
+            <div class="flex flex-col max-w-sm mx-4 my-6 shadow-lg lg:max-w-6xl duration-300 hover:scale-110  cursor-pointer">
+                <div class="px-4 py-12 rounded-t-3xl sm:px-8 md:px-12 dark:bg-gray-900 card">
+                    <p class="relative px-6 py-1 text-xl lg:text-3xl text-center dark:text-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="w-14 h-14 dark:text-lime-400 mb-5">
+                            <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                            <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+                        </svg>Su diseño web intuitivo y atractivo nos ha ayudado a atraer a una audiencia más amplia, lo que ha tenido un impacto significativo en nuestro negocio. Ampliando tambien nuestro alcance y así llegar a más clientes en línea</p>
+                </div>
+                <div class="flex flex-col items-center justify-center p-8 rounded-b-3xl dark:bg-teal-400 dark:text-gray-900">
+                    <p class="text-4xl font-semibold leading-tight">Distinctio Animi</p>
+                    <p class="text-sm uppercase">Aliquam illum</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!--        CARD COMPRA PACK               -->
+
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" id="planes">
+        <div class="mb-10 md:mx-auto text-center lg:max-w-4xl md:mb-12">
+          <h1 class="mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 text-7xl md:mx-auto">
+            Elige tu camino.
+          </h1>
+          <h3 class="text-gray-700 text-2xl">
+            Tenemos diferentes opciones que se adecuan a tus gustos
+          </h3>
+        </div>
+        <div class="flex flex-col gap-10 md:flex-row lg:max-w-screen-lg  xl:max-w-screen-lg sm:mx-auto">
+          <div class="flex flex-col transition duration-300 bg-white rounded shadow-sm hover:shadow hover:translate-y-4">
+            <div class="relative w-full h-2/4">
+              <img src="img/plan-1.jpg" class="object-cover bg-bottom w-full h-full rounded-t" alt="Plan" />
+            </div>
+            <div class="flex flex-col justify-between flex-grow p-8 border border-t-0 rounded-b">
+              <div>
+                <div class="text-4xl font-semibold mb-5">Landing page</div>
+                <p class="text-sm text-gray-900">
+                  Página web para ideal para mostrar tus productos
+                </p>
+                <li class="list-image-[url(img/icono-check-16.png)] my-5 text-xl">Pagina web de 4 secciones y cada pagina para su sección. Total de 4 páginas</li>
+                <li class="list-image-[url(img/icono-check-16.png)] my-5 text-xl">Link a tu whatsapp.</li>
+                <li class="list-image-[url(img/icono-check-16.png)] my-5 text-xl">1 reunión por semana durante 4 semanas para mostrar avances vía zoom</li>
+                <li class="list-image-[url(img/icono-do-not-disturb-16.png)] my-5 text-xl">Sin iconos ni logo personalizados.</li>
+                <li class="list-image-[url(img/icono-do-not-disturb-16.png)] my-5 text-xl">Hosting y dominio a convenir.</li>
+              </div>
+              <a
+                href="#contacto"
+                class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white text-xl rounded shadow-md bg-slate-700"
+              >
+              Ir a contacto para más información
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col transition duration-300 bg-slate-700 text-white rounded shadow-sm hover:shadow hover:translate-y-4">
+            <div class="relative w-full h-2/4">
+              <img src="img/plan-2.jpg" class="object-cover w-full h-full rounded-t  " alt="Plan" />
+            </div>
+            <div class="flex flex-col justify-between flex-grow p-8 border border-t-0 rounded-b">
+              <div>
+                <div class="text-4xl font-semibold mb-5">Emprendedor</div>
+                <p class="text-xl">
+                  Pagina web ideal para emprendedores
+                </p>
+                <li class="list-image-[url(img/icono-check-16.png)] my-5 text-xl">Pagina web de 1 (una) página con 4 secciones.</li>
+                <li class="list-image-[url(img/icono-check-16.png)] my-5 text-xl">Link a tu whatsapp.</li>
+                <li class="list-image-[url(img/icono-check-16.png)] my-5 text-xl">1 reunión por semana durante 2 semanas para mostrar avances vía zoom</li>
+                <li class="list-image-[url(img/icono-do-not-disturb-16.png)] my-5 text-xl" >Sin iconos ni logo personalizados.</li>
+                <li class="list-image-[url(img/icono-do-not-disturb-16.png)] my-5 text-xl" >Hosting y dominio a convenir.</li>
+              </div>
+              <a href="#contacto" class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-slate-700 text-xl rounded shadow-md bg-white">
+              Ir a contacto para más información
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col transition duration-300 bg-white rounded shadow-sm hover:shadow hover:translate-y-4">
+            <div class="relative w-full h-2/4">
+              <img src="img/plan-3.jpg" class="object-cover w-full h-full rounded-t" alt="Plan" />
+            </div>
+            <div class="flex flex-col justify-between flex-grow p-8 border border-t-0 rounded-b">
+              <div>
+                <div class="text-4xl font-semibold mb-5">Carrito de compras</div>
+                <p class="text-sm text-gray-900">
+                 Carrito de compras
+                </p>
+                <li class="list-image-[url(img/icono-check-16.png)] my-5 text-xl">Pagina web con catalogo y carrito de compras.</li>
+                <li class="list-image-[url(img/icono-check-16.png)] my-5 text-xl">Link a tu whatsapp.</li>
+                <li class="list-image-[url(img/icono-check-16.png)] my-5 text-xl">Proyecto con tiempo y dedicación, reuniones personalizadas semanalmente para mostrar adelantos</li>
+                <li class="list-image-[url(img/icono-check-16.png)] my-5 text-xl">Hosting sin cargo durante 1 año</li>
+                <li class="list-image-[url(img/icono-do-not-disturb-16.png)] my-5 text-xl" >Sin iconos ni logo personalizados.</li>
+              </div>
+              <a
+                href="#contacto"
+                class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white text-xl rounded shadow-md bg-slate-700"
+              >
+                Ir a contacto para más información
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--       FAQ PREGUNTAS FRECUENTES   -->
+
+    <section class=" pb-20">
+      <div class="container px-6 py-12 mx-auto">
+          <h1 class="text-3xl text-center font-semibold text-gray-800 lg:text-5xl ">FAQ Preguntas frecuentes.</h1>
+  
+          <div class="grid grid-cols-1 gap-8 mt-8 lg:mt-16 md:grid-cols-2 xl:grid-cols-3">
+              <div>
+                  <div class="inline-block p-3 text-white bg-blue-600 rounded-lg">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                  </div>
+  
+                  <div>
+                      <h1 class="text-3xl font-semibold text-gray-700 my-5">¿Qué es una página web?</h1>
+  
+                      <p class="mt-2 text-xl">
+                        Una página web es un documento electrónico que se muestra en un navegador web y que contiene texto, imágenes, vídeos, enlaces, etc.
+                      </p>
+                  </div>
+              </div>
+  
+              <div>
+                  <div class="inline-block p-3 text-white bg-blue-600 rounded-lg">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                  </div>
+  
+                  <div>
+                      <h1 class="text-3xl font-semibold my-5 ">¿Qué es el diseño responsivo y por qué es importante?</h1>
+  
+                      <p class="mt-2 text-xl ">
+                        El diseño responsivo es una técnica de diseño web que hace que una página web se adapte automáticamente al tamaño de la pantalla del dispositivo en el que se está viendo. Es importante porque la mayoría de las personas utilizan dispositivos móviles para navegar por la web.
+                      </p>
+                  </div>
+              </div>
+  
+             
+  
+              <div>
+                  <div class="inline-block p-3 text-white bg-blue-600 rounded-lg">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                  </div>
+  
+                  <div>
+                      <h1 class="text-3xl font-semibold my-5">¿Qué es un dominio y cómo puedo registrar uno para mi página web?</h1>
+  
+                      <p class="mt-2 text-xl">
+                        Un dominio es la dirección única de tu sitio web. Puedes registrar un dominio a través de un registrador de dominios en línea, como GoDaddy o Namecheap.
+                      </p>
+                  </div>
+              </div>
+  
+              <div>
+                  <div class="inline-block p-3 text-white bg-blue-600 rounded-lg">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                  </div>
+  
+                  <div>
+                      <h1 class="text-3xl font-semibold my-5">¿Qué es un hosting y cómo puedo elegir uno para mi página web?</h1>
+  
+                      <p class="mt-2 text-xl">
+                        Un hosting es el servicio que te permite almacenar tu página web y hacerla accesible en línea. Puedes elegir un hosting basado en la velocidad, la seguridad, la atención al cliente y el precio.
+                      </p>
+                  </div>
+              </div>
+  
+              <div>
+                  <div class="inline-block p-3 text-white bg-blue-600 rounded-lg">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                  </div>
+  
+                  <div>
+                      <h1 class="text-3xl font-semibold my-5">¿Cómo puedo mejorar la experiencia de usuario en mi página web?</h1>
+  
+                      <p class="mt-2 text-xl">
+                        Puedes mejorar la experiencia de usuario en tu página web utilizando un diseño limpio y fácil de navegar, contenido relevante y útil, y un tiempo de carga rápido.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+    <!--      CONTACTO      -->
+    <section class=" contacto mx-auto p-10 md:p-80 " id="contacto">
+        <h1 class="contacto__heading text-center text-white text-6xl font-bold mb-5">Contactate con nosotros</h1> 
+        <form action="email.php" method="POST" id="form" class="flex flex-col mx-auto max-w-xl md:max-w-4xl bg-inherit p-10 rounded-2xl shadow-xl backdrop-brightness-150 " >
+            <label class="contacto__label mt-5  text-2xl tracking-widest text-white" for="nombre" >Nombre:</label>
+            <input placeholder="inserte su nombre aqui" id="nombre" name="nombre" type="text" class="contacto__input p-4 mt-5 border-2 border-cyan-600 box-border rounded-2xl text-2xl">
+
+            <label class="contacto__label mt-5  text-2xl tracking-widest text-white" for="email">Email:</label>
+            <input placeholder="inserte su email aqui" id="email" name="email"  type="email" class="contacto__input p-4 border-2 mt-5 border-cyan-600 rounded-2xl text-2xl">
+
+            <label class="contacto__label mt-5  text-2xl tracking-widest text-white" for="asunto">Asunto:</label>
+            <input placeholder="Detalle su asunto" id="asunto" name="asunto"  type="text" class="contacto__input p-4 border-2 mt-5 border-cyan-600 rounded-2xl text-2xl">
+
+            <label class="contacto__label mt-5 text-2xl tracking-widest text-white" for="mensaje" >Mensaje:</label>
+            <textarea placeholder="Escriba su mensaje" name="mensaje" id="mensaje" cols="10" rows="10" class="p-4 mt-5 border-2 border-cyan-600 rounded-2xl text-2xl"></textarea>
+
+            <input class="contacto__submit mt-10 max-w-fit text-center mx-auto" id="enviar" type="submit" value="Enviar">
+            <div class="alerta" id="alerta"></div>
+        </form>
+    </section>
+
+
+    <!--         FOOTER       -->
+
+    <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div class="flex flex-col gap-10 lg:flex-row lg:justify-between ">
+          <div class="sm:col-span-2">
+            <a href="#inicio" aria-label="Go home" title="symmetry" class="inline-flex items-center">
+              <img src="img/logo-2.png"  class="w-72"  alt="logo-symmetry">
+              <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Symmetry - Consultora web</span>
+            </a>
+            <div class="mt-6 lg:max-w-sm">
+              <p class="text-sm text-gray-800">
+                La simplicidad es la clave de un gran diseño web.
+              </p>
+              <p class="mt-2 text-sm text-gray-800">
+                Creando una presencia en línea sofisticada a través del diseño web elegante.
+              </p>
+              <p class="mt-2 text-sm text-gray-800 mb-10">
+                Ten tu negocio 24/7 los 365 días del año.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-2 text-sm lg:flex lg:flex-col lg:justify-evenly">
+            <p class="font-bold tracking-wide text-gray-900 text-2xl uppercase ">Contactos</p>
+            <div class="flex items-center">
+              <p class="mr-1 text-gray-800 text-2xl">Whatsapp:</p>
+              <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone" class="transition-colors duration-300 text-deep-purple-accent-400 text-2xl hover:text-lime-600"><img src="icono-whatsapp.png" class="inline" alt=""> Click para iniciar una charla </a>
+            </div>
+            <div class="flex">
+              <p class="mr-1 text-gray-800 text-2xl">Email:</p>
+              <a href="mailto:ntraczuk92@hotmail.com" aria-label="Our email" title="Our email" class="transition-colors duration-300 text-deep-purple-accent-400 text-2xl hover:text-cyan-800">symmetry@consultora.com.ar</a>
+            </div>
+            
+          </div>
+          <div class="lg:flex lg:flex-col lg:justify-evenly">
+            <span class="font-bold tracking-wide text-gray-900 text-2xl uppercase">Redes sociales</span>
+            <div class="flex items-center mt-1 space-x-3">
+              <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                  <path
+                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
+                  <circle cx="15" cy="15" r="4"></circle>
+                  <path
+                    d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                  <path
+                    d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <p class="mt-4 text-sm text-gray-500">
+              Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+          <p class="text-sm text-gray-600">
+            © Copyright 2023 Symmetry consultora web. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
