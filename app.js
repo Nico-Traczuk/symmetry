@@ -1,9 +1,4 @@
-window.addEventListener('DOMContentLoaded', ()=> {
-
-
-});
-
-
+document.addEventListener('DOMContentLoaded', enviarEmail);
 
 const inputNombre = document.querySelector('#nombre')
 const inputEmail = document.querySelector('#email')
@@ -14,18 +9,49 @@ const form = document.querySelector('#form')
 const divAlerta = document.querySelector('#alerta')
 
  
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
+
+function enviarEmail() {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+    
+        validacion()
 
 
+        const datos = new FormData();
+        datos.append('nombre', inputNombre.value);
+        datos.append('email', inputEmail.value);
+        datos.append('asunto', inputAsunto.value);
+        datos.append('mensaje', inputMensaje.value);
+
+        fetch("email.php", {
+            method: "POST",
+            body: datos
+        })
+        .then(function(response) {
+            // Manejar la respuesta del servidor
+            if (response.ok) {
+                console.log('envio el email');
+            } else {
+                console.log('no se envio el email')
+            }
+        })
+        .catch(function(error) {
+            alert("Ocurrió un error al enviar el correo.");
+        });
+
+    })
+    
+}
+
+function validacion() {
+    
     if(inputNombre.value === '' || inputEmail.value === '' || inputAsunto.value === '' || inputMensaje.value === '') {
         mostrarAlerta('Todos los campos deben estar completos', 'error');
     } else{
         mostrarAlerta('Mensaje enviado con exito');
     }
 
-})
-
+}
 
 
 function mostrarAlerta(mensaje, tipo) {
@@ -75,6 +101,7 @@ function limpiarHTML() {
         divAlerta.removeChild(divAlerta.firstChild);
     }
 };
+
 
 
 
