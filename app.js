@@ -68,15 +68,11 @@ function mostrarAlerta(mensaje, tipo) {
         }, 3800);
 
     } else {
-        console.log(divMensaje.classList);
-
         divMensaje.classList.add('success', 'text-4xl', 'text-center', 'px-2','py-2', 'mt-5', 'bg-lime-400', 'rounded-xl', 'border-2', 'border-black', 'text-white', 'animate__animated','animate__fadeIn' , 'animate__slow');
         setTimeout(() => {
             divMensaje.classList.add('animate__fadeOut');
         }, 3000);
         divMensaje.innerHTML = `${mensaje}<span class="block text-lg mt-2"> En breve nos estaremos contactando con usted</span>`;
-        console.log(divMensaje.classList);
-
     };
     
     inputSubmit.style.display = 'none';

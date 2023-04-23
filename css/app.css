@@ -110,7 +110,7 @@ a {
 
 
 .header__texto {
-    margin:10rem auto;
+    margin:5rem auto;
     color: white;
     width: 100%;
     padding: 2rem;
@@ -187,7 +187,7 @@ a {
 
 .wave::before {
     content: '';
-    display: block;
+    display: none;
     position: absolute;
     background-image: url(../wave-3.svg) ;
     background-repeat: repeat-x;
@@ -201,6 +201,7 @@ a {
 
 @media (min-width: 768px) {
     .wave::before {
+        display: block;
         bottom: -20px;
         height: 27vh;
     }    
@@ -245,6 +246,7 @@ a {
 
 .contacto__input:focus {
     background-color: rgba(108, 117, 243, 0.808);
+    color: white;
 }
 
 .contacto__submit {
@@ -264,7 +266,10 @@ a {
 }
 
 
-
+.contacto__mensaje:focus {
+    background-color: rgba(108, 117, 243, 0.808);
+    color: white;
+}
 
 .error  {
     background-color: rgba(247, 100, 56, 0.801);
